@@ -12,7 +12,9 @@ print("My name is Your Name")
 # Line 2: Your age
 # Line 3: Your favorite hobbyๅ
 # Write your code here:
-
+print("Tanakorn")
+print("20")
+print("Playing game")
 
 # Exercise 4: Print with Different Content
 # Use print() to display the following (one per line):
@@ -21,7 +23,8 @@ print("My name is Your Name")
 # - A sentence with spaces
 
 # Write your code here:
-
+print(45)
+print(4.00)
 
 
 # Exercise 5: Understanding Print Behavior
