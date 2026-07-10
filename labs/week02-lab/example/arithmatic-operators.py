@@ -2,18 +2,19 @@
 # DEMO 1: Basic Arithmetic Operators
 # =============================================================================
 
-print("=" * 50)
+print("=" * 50)#print = 50 times
 print("DEMO 1: Basic Arithmetic Operators")
 print("=" * 50)
 
-a = 15
-b = 4
+a = 15 #int
+b = 4  #int
 
 print(f"a = {a}, b = {b}")
+print("a = {a}, b = {b}")
 print()
 
 # Addition (+)
-result_add = a + b
+result_add = a + b #int+int=int
 print(f"Addition:       {a} + {b} = {result_add}")
 
 # Subtraction (-)
@@ -25,7 +26,7 @@ result_mul = a * b
 print(f"Multiplication: {a} * {b} = {result_mul}")
 
 # Division (/)
-result_div = a / b
+result_div = a / b#ถ้าเป็นทศนิยมก็เป็นfloatเลย
 print(f"Division:       {a} / {b} = {result_div}")
 
 # Floor Division (//)
@@ -81,7 +82,7 @@ print("=" * 50)
 
 # ตัวอย่างลำดับการคำนวณ
 expression1 = "2 + 3 * 4"
-result1 = 2 + 3 * 4
+result1 = 2 + 3 * 4 # = ทำตัวท้าย   สำคัญสุด<--** , +x -x , * / // % , + - , < <= > >=  == != , ตรรกะ not and or -->ทำทีหลัง
 print(f"{expression1} = {result1}")
 print("Explanation: * has higher precedence than +")
 print("So: 2 + (3 * 4) = 2 + 12 = 14")

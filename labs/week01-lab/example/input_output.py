@@ -5,6 +5,12 @@ user_name = input("What is your name? ")
 print("Hello,", user_name, "!")
 print("Nice to meet you,", user_name)
 
+#C  ภาษาC
+#cha name[30]
+#printf("What is your name? ")
+#scanf("%s",name)
+
+
 # Exercise 2: Input with Numbers
 # Note: input() always returns a string, so we need to convert to numbers
 print("\n=== Exercise 2: Working with Numbers ===")
@@ -13,13 +19,13 @@ age = int(age_string)  # Convert string to integer
 print("You are", age, "years old")
 print("Next year you will be", age + 1, "years old")
 
-# Exercise 3: Multiple Inputs
+# Exercise 3: Multiple Inputs  รับข้อมูล 3 ตัว
 print("\n=== Exercise 3: Multiple Inputs ===")
 first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
 birth_year = int(input("Enter your birth year: "))
 
-current_year = 2025
+current_year = 2026
 calculated_age = current_year - birth_year
 
 print("Full name:", first_name + " " + last_name)
@@ -42,7 +48,7 @@ print("\n=== Exercise 5: Your Turn ===")
 
 # Ask user for their favorite number and convert it to float
 favorite_num_str = input("What's your favorite number? ")
-favorite_num = float(favorite_num_str)
+favorite_num = float(favorite_num_str)# Convert string to float
 print("Your favorite number times 2 is:", favorite_num * 2)
 
 # Ask for two numbers and show their sum

@@ -1,0 +1,16 @@
+print("2. Time Converter:")
+print("   - Ask user for seconds")
+print("   - Convert to hours, minutes, and remaining seconds")
+print("   - Example: 3661 seconds = 1 hour, 1 minute, 1 second")
+print()
+
+print("2. Time Converter:")
+seconds = int(input("Enter seconds :"))
+
+hour = seconds // 3600
+seconds2 = seconds % 3600
+
+minute = seconds2 // 60
+seconds2= seconds % 60
+
+print(f"{seconds}seconds= {hour}hour {minute}minute {seconds2}seconds")
