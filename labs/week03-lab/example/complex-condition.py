@@ -1,7 +1,11 @@
+#arimatic operator + - * / % // **
+#comparison operator == != < > <= >=
+#logical operator and (&&) or(||) not(!)
+
 # Multiple conditions with logical operators
 username = "admin"
 password = "12345"
-is_active = True
+is_active = True #เป็นบูลีน true false
 
 if username == "admin" and password == "12345" and is_active:
     print("Access granted")
@@ -30,3 +34,6 @@ if weather == "sunny":
         print("Sunny but cold")
 else:
     print("Not a sunny day")
+
+ #if weather == "sunny" and  temperature > 25
+ #print ("Perfect day for swim")

@@ -7,7 +7,7 @@ if age >= 18:
 temperature = 25
 if temperature > 30:
     print("It's hot outside")
-else:
+else:                          
     print("It's not too hot")
 
 # if-elif-else statement
