@@ -33,5 +33,6 @@
     // Optional: Also disable Copilot for specific languages.
     "github.copilot.advanced": {
         "inlineSuggest.enableFor": {}
-    }
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
