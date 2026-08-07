@@ -21,15 +21,15 @@ print()
 # Example 2: Function that performs a task
 def draw_separator():
     """Draws a line separator"""
-    print("-" * 40)
+    print("-" * 40) ##- 40 ตัว
 
 draw_separator()
 print("This is between separators")
 draw_separator()
-print()
+print()##บรรทัดว่างเปล่า
 
 # =============================================================================
-# PART 2: FUNCTIONS WITH PARAMETERS
+# PART 2: FUNCTIONS WITH PARAMETERS =input program ย่อย
 # =============================================================================
 print("\n=== PART 2: FUNCTIONS WITH PARAMETERS ===")
 
@@ -39,7 +39,7 @@ def greet_person(name):
     print(f"Hello, {name}! Nice to meet you.")
 
 print("Calling greet_person with different names:")
-greet_person("Alice")
+greet_person("Alice") ## ""อยู่ในนี้เป็น string
 greet_person("Bob")
 greet_person("Charlie")
 print()
@@ -93,14 +93,16 @@ def get_circle_info(radius):
     pi = 3.14159
     area = pi * radius * radius
     circumference = 2 * pi * radius
-    return area, circumference
+    volumn = 4.0/3 * ip * radius ** 3
+    return area, circumference, volumn
 
 print("Circle calculations:")
 radius = 5
-area, circumference = get_circle_info(radius)
+area, circumference = get_circle_info(radius) ## ดึงค่าจากF
 print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
+print(f"volumn: {volumn:.2f}")
 print()
 
 # Example 3: Using returned values in expressions
@@ -111,24 +113,28 @@ def multiply(x, y):
 def square(n):
     """Returns the square of a number"""
     return n * n
+def square_root(n):
+    return n ** 0.5
 
 print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
 
+print(f"square root of 25 =",square_root(25))
+print()
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
 # =============================================================================
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
 # Example 1: Function with default parameter
-def greet_with_title(name, title="Mr./Ms."):
+def greet_with_title(name, title="Mr./Ms."):#title Default
     """Greets person with optional title"""
     print(f"Hello, {title} {name}!")
 
 print("Using default parameters:")
-greet_with_title("Smith")  # Uses default title
+greet_with_title("Smith")  # Uses default title เป็นตัวDefault
 greet_with_title("Johnson", "Dr.")  # Custom title
 greet_with_title("Brown", "Prof.")  # Custom title
 print()
