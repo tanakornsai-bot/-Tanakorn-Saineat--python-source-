@@ -8,6 +8,6 @@ print()
 
 for i in range(5):
     if scores[i] >= 50:
-        print(f"Student {i + 1}: {scores[i]} -> ผ่าน")
+        print(f"Student {i + 1}: {scores[i]} -> pass")
     else:
-        print(f"Student {i + 1}: {scores[i]} -> ไม่ผ่าน")
+        print(f"Student {i + 1}: {scores[i]} -> Not pass")
