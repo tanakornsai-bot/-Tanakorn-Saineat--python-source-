@@ -31,3 +31,4 @@ def calculate_circle_area(radius):
 print("Calculating triangle areas:")
 calculate_circle_area(5)
 calculate_circle_area(10)
+
