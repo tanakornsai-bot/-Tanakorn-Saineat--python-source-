@@ -1,6 +1,6 @@
 def convert_currency(value,currency):
     result=0
-    if currency == "THB":
+    if currency == "USD":
         result = value / 33
         print(f"{value} THB = {result} USD")
     else :
@@ -8,6 +8,5 @@ def convert_currency(value,currency):
         print(f"{value} USD = {result} THB")
 
 
-value=float(input("Enter Value"))
-currency=input("Enter your currency THB/USD:")
-convert_currency(value,"currency")
+convert_currency(100,"USD")
+convert_currency(100,"THB")
