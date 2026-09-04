@@ -11,7 +11,11 @@ name = "India"
 graduate = 'B.E.'
 multiline = """This is a
 multiline string
-example"""
+example""" ## multiline 3 บรรทัด
+
+"""
+this is comment
+"""
 
 print(f"name = {name}")
 print(f"graduate = {graduate}")
@@ -23,7 +27,7 @@ print(f"multiline = {multiline}")
 
 print("\n=== READING AND CONVERTING ===")
 # Note: Using input() instead of raw_input() for Python 3
-name = input("Enter your name: ")
+name = input("Enter your name: ") ## input ไม่บอกชนิดข้อมูลเป็น tring เสมอ
 print(f"Hello {name}")
 
 # Converting string to number
@@ -32,7 +36,7 @@ try:
     x = int(apple) - 10
     print(f"Result: {x}")
 except ValueError:
-    print("Please enter a valid number!")
+    print("Please enter a valid number!") ##รับข้อมูนจากผู้ใช้จนกว่าจะถูกตามที่โปรแกรมต้องการรับ
 
 # ===========================
 # 3. STRING INDEXING
@@ -41,7 +45,7 @@ except ValueError:
 print("\n=== STRING INDEXING ===")
 fruit = 'banana'
 print(f"fruit = {fruit}")
-print(f"fruit[1] = {fruit[1]}")  # 'a'
+print(f"fruit[1] = {fruit[1]}")  # 'a'ตัวที่/ของคำว่าbanana
 
 n = 3
 w = fruit[n - 1]  # fruit[2]
@@ -63,8 +67,8 @@ message = "hello"
 index = 0
 
 print("Method 1: Using for loop with enumerate")
-for i, char in enumerate(message):
-    print(f"message[{i}] = {char}")
+for i, char in enumerate(message): ##enumerate = loop จนกว่า ครบข้อความ
+    print(f"message[{i}] = {char}") 
 
 print("\nMethod 2: Manual indexing")
 index = 0
@@ -73,20 +77,20 @@ for char in message:
     index += 1
 
 # ===========================
-# 5. CONCATENATION AND MULTIPLICATION
+# 5. CONCATENATION AND MULTIPLICATION 
 # ===========================
-
+# 5. CONCATENATION การเชื่อม การต่อ
 print("\n=== CONCATENATION AND MULTIPLICATION ===")
 str1 = 'Hello'
 str2 = 'World!'
 
 # Concatenation
 result = str1 + str2
-print(f"str1 + str2 = {result}")
+print(f"str1 + str2 = {result}") ## ผลรัน str1 + str2 = HelloWorld!
 
 # Multiplication
 repeat = str1 * 3
-print(f"str1 * 3 = {repeat}")
+print(f"str1 * 3 = {repeat}") ## ผลรัน str1 * 3 = HelloHelloHello
 
 # ===========================
 # 6. APPENDING STRINGS
@@ -94,8 +98,8 @@ print(f"str1 * 3 = {repeat}")
 
 print("\n=== APPENDING STRINGS ===")
 greeting = 'hello'
-name = input("Enter your name: ")
-greeting += name
+name = input("Enter your name: ") 
+greeting += name ##+= คือต่อไปเลยจากของเดิม greeting = greeting + name ตย. hello+Tanakorn = helloTanakorn
 greeting += ". welcome to pune"
 print(greeting)
 
@@ -109,7 +113,7 @@ text = 'Hello World'
 for letter in text:
     if letter == 'l':
         count += 1
-print(f"{count} letters 'l' found in '{text}'")
+print(f"{count} letters 'l' found in '{text}'") ## find l in Hello World 
 
 # ===========================
 # 8. MEMBERSHIP TEST
@@ -202,13 +206,13 @@ text = "welcome to the world of python"
 
 # Case methods
 print(f"Original: {text}")
-print(f"Upper: {text.upper()}")
-print(f"Lower: {text.lower()}")
-print(f"Title: {text.title()}")
+print(f"Upper: {text.upper()}")##พิมพ์ใหญ่
+print(f"Lower: {text.lower()}")##พิมพ์เล็ก
+print(f"Title: {text.title()}")##พิมพ์ใหญ่ หน้าสุด
 print(f"Capitalize: {text.capitalize()}")
 
 # Search methods
-print(f"Find 'world': {text.find('world')}")
+print(f"Find 'world': {text.find('world')}")##Find 'world': 15
 print(f"Count 'o': {text.count('o')}")
 print(f"Starts with 'welcome': {text.startswith('welcome')}")
 print(f"Ends with 'python': {text.endswith('python')}")
@@ -222,12 +226,12 @@ print(f"Join with '-': {'-'.join(words)}")
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
-
+print(f"isalnum(): {test_str.isalnum()}")#ถามว่าเป็นเลขไหม
+print(f"isalpha(): {test_str.isalpha()}")#ถามว่ามีแค่ตัวอักศรและตัวเลข Alphabet
+print(f"isdigit(): {test_str.isdigit()}")#ถามว่าเป็นตัวเลขไหม
+print(f"isupper(): {test_str.isupper()}")#ถามว่าเป็นตัวพิมพ์ใหญ่
+print(f"islower(): {test_str.islower()}")#ถามว่าเป็นตัวพิมพ์เล็ก
+#House id  ไม่จำเป็นต้องเป็น int เพราะไม่มีมากกว่าน้อยกว่า 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
 # ===========================
