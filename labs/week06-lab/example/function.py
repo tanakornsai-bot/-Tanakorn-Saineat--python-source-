@@ -98,7 +98,7 @@ def get_circle_info(radius):
 
 print("Circle calculations:")
 radius = 5
-area, circumference = get_circle_info(radius) ## ดึงค่าจากF
+area, circumference, volumn = get_circle_info(radius) ## ดึงค่าจากF
 print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
@@ -129,7 +129,7 @@ print()
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
 # Example 1: Function with default parameter
-def greet_with_title(name, title="Mr./Ms."):#title Default
+def greet_with_title(name, title="Mr./Ms."):#title Default parameter
     """Greets person with optional title"""
     print(f"Hello, {title} {name}!")
 

@@ -1,0 +1,61 @@
+#part1
+#exsample1
+#Calling say_hello():
+#Hello, World!
+#Welcome to Python functions!
+#
+#part1
+#exsample2
+#----------------------------------------
+#This is between separators
+#----------------------------------------
+#
+#part2
+#exsample1
+#Calling greet_person with different names:
+#Hello, Alice! Nice to meet you.
+#Hello, Bob! Nice to meet you.
+#Hello, Charlie! Nice to meet you.
+#
+#part2
+#exsample2
+
+#part2
+#exsample3
+
+#part3
+#exsample1
+#Using functions that return values:
+#5 + 3 = 8
+#10 + 7 = 17
+#Sum of both results:25
+#
+#part3
+#exsample2
+
+#part4
+#exsample1
+#Using default parameters:
+#Hello, Mr./Ms. Smith!
+#Hello, Dr. Johnson!
+#Hello, Prof. Browm!
+#
+#part4
+#exsample2
+#Multiple default parameters:
+#Profile: Alice, Age: 18, Country: Unknown
+#Profile: Bob, Age: 25, Country: Unknown
+#Profile: Charlie, Age: 30, Country: USA
+
+def convert_currency(value,currency):
+    if currency == USD:
+        money=value * 33
+    elif currency == THB:
+        money=value / 33
+    return money 
+
+
+value=float(input("Enter Value"))
+currency=input("Enter your currency")
+convert_currency(value,currency)
+print(f"{money} {currency}")
