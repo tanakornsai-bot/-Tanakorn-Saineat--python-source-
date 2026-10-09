@@ -25,12 +25,12 @@ class BankAccount:
             return True
         return False
     
-    # Property decorator for read-only access
-    @property
-    def transaction_history(self):
-        return self.__transaction_history.copy()
+    # Property decorator for read-only access ซ่อน method นี้
+    @property 
+    def transaction_history(self): 
+        return self.__transaction_history.copy() #ได้สำเนาข้อมูลจาก copy()
     
-    def __str__(self):
+    def __str__(self):#method toSthing ทำให้ print กำหนดรูปแบบได้ ที่ บรรทัด 41
         return f"Account {self.account_number}: Balance ${self.__balance}"
 
 # Usage example
@@ -38,4 +38,4 @@ account = BankAccount("12345", 1000)
 print(account.get_balance())  # 1000
 account.deposit(500)
 account.withdraw(200)
-print(account)  # Account 12345: Balance $1300
+print(account)  # Account 12345: Balance $1300 
