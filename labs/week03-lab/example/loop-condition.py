@@ -9,10 +9,13 @@
 # demo_for_basic.py
 print("=== Demo 1: Basic For Loop ===")
 
+<<<<<<< HEAD
 print (range(5))#0ไปถึง5-1 [0 ,1 ,2 ,3 ,4]
 print (range(1, 5)) # 1 ไปถึง 5-1 [1 ,2 ,3 ,4]
 print (range(1, 5, 2)) #[1,3] เพื่มขึ้นทีละ 2
 
+=======
+>>>>>>> upstream/main
 # Loop ผ่านตัวเลข
 print("นับจาก 1 ถึง 5:")
 for i in range(1, 6):
@@ -39,7 +42,11 @@ print("=" * 50)
 # demo_while_basic.py
 print("=== Demo 2: Basic While Loop ===")
 
+<<<<<<< HEAD
 # นับด้วย while ใช้ตอนไม่รู้ลูปกี่รอบ
+=======
+# นับด้วย while
+>>>>>>> upstream/main
 print("นับจาก 1 ถึง 5 ด้วย while:")
 count = 1
 while count <= 5:
@@ -66,7 +73,11 @@ print("=== Demo 3: Loops + Conditions ===")
 
 # หาเลขคู่และคี่
 print("แยกเลขคู่-คี่:")
+<<<<<<< HEAD
 for num in range(1, 11):#เริ่ม 1 จบที่ 11-1
+=======
+for num in range(1, 11):
+>>>>>>> upstream/main
     if num % 2 == 0:
         print(f"{num} เป็นเลขคู่")
     else:

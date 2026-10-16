@@ -11,11 +11,15 @@ name = "India"
 graduate = 'B.E.'
 multiline = """This is a
 multiline string
+<<<<<<< HEAD
 example""" ## multiline 3 บรรทัด
 
 """
 this is comment
 """
+=======
+example"""
+>>>>>>> upstream/main
 
 print(f"name = {name}")
 print(f"graduate = {graduate}")
@@ -27,7 +31,11 @@ print(f"multiline = {multiline}")
 
 print("\n=== READING AND CONVERTING ===")
 # Note: Using input() instead of raw_input() for Python 3
+<<<<<<< HEAD
 name = input("Enter your name: ") ## input ไม่บอกชนิดข้อมูลเป็น tring เสมอ
+=======
+name = input("Enter your name: ")
+>>>>>>> upstream/main
 print(f"Hello {name}")
 
 # Converting string to number
@@ -36,7 +44,11 @@ try:
     x = int(apple) - 10
     print(f"Result: {x}")
 except ValueError:
+<<<<<<< HEAD
     print("Please enter a valid number!") ##รับข้อมูนจากผู้ใช้จนกว่าจะถูกตามที่โปรแกรมต้องการรับ
+=======
+    print("Please enter a valid number!")
+>>>>>>> upstream/main
 
 # ===========================
 # 3. STRING INDEXING
@@ -45,7 +57,11 @@ except ValueError:
 print("\n=== STRING INDEXING ===")
 fruit = 'banana'
 print(f"fruit = {fruit}")
+<<<<<<< HEAD
 print(f"fruit[1] = {fruit[1]}")  # 'a'ตัวที่/ของคำว่าbanana
+=======
+print(f"fruit[1] = {fruit[1]}")  # 'a'
+>>>>>>> upstream/main
 
 n = 3
 w = fruit[n - 1]  # fruit[2]
@@ -67,8 +83,13 @@ message = "hello"
 index = 0
 
 print("Method 1: Using for loop with enumerate")
+<<<<<<< HEAD
 for i, char in enumerate(message): ##enumerate = loop จนกว่า ครบข้อความ
     print(f"message[{i}] = {char}") 
+=======
+for i, char in enumerate(message):
+    print(f"message[{i}] = {char}")
+>>>>>>> upstream/main
 
 print("\nMethod 2: Manual indexing")
 index = 0
@@ -77,20 +98,34 @@ for char in message:
     index += 1
 
 # ===========================
+<<<<<<< HEAD
 # 5. CONCATENATION AND MULTIPLICATION 
 # ===========================
 # 5. CONCATENATION การเชื่อม การต่อ
+=======
+# 5. CONCATENATION AND MULTIPLICATION
+# ===========================
+
+>>>>>>> upstream/main
 print("\n=== CONCATENATION AND MULTIPLICATION ===")
 str1 = 'Hello'
 str2 = 'World!'
 
 # Concatenation
 result = str1 + str2
+<<<<<<< HEAD
 print(f"str1 + str2 = {result}") ## ผลรัน str1 + str2 = HelloWorld!
 
 # Multiplication
 repeat = str1 * 3
 print(f"str1 * 3 = {repeat}") ## ผลรัน str1 * 3 = HelloHelloHello
+=======
+print(f"str1 + str2 = {result}")
+
+# Multiplication
+repeat = str1 * 3
+print(f"str1 * 3 = {repeat}")
+>>>>>>> upstream/main
 
 # ===========================
 # 6. APPENDING STRINGS
@@ -98,8 +133,13 @@ print(f"str1 * 3 = {repeat}") ## ผลรัน str1 * 3 = HelloHelloHello
 
 print("\n=== APPENDING STRINGS ===")
 greeting = 'hello'
+<<<<<<< HEAD
 name = input("Enter your name: ") 
 greeting += name ##+= คือต่อไปเลยจากของเดิม greeting = greeting + name ตย. hello+Tanakorn = helloTanakorn
+=======
+name = input("Enter your name: ")
+greeting += name
+>>>>>>> upstream/main
 greeting += ". welcome to pune"
 print(greeting)
 
@@ -113,7 +153,11 @@ text = 'Hello World'
 for letter in text:
     if letter == 'l':
         count += 1
+<<<<<<< HEAD
 print(f"{count} letters 'l' found in '{text}'") ## find l in Hello World 
+=======
+print(f"{count} letters 'l' found in '{text}'")
+>>>>>>> upstream/main
 
 # ===========================
 # 8. MEMBERSHIP TEST
@@ -206,6 +250,7 @@ text = "welcome to the world of python"
 
 # Case methods
 print(f"Original: {text}")
+<<<<<<< HEAD
 print(f"Upper: {text.upper()}")##พิมพ์ใหญ่
 print(f"Lower: {text.lower()}")##พิมพ์เล็ก
 print(f"Title: {text.title()}")##พิมพ์ใหญ่ หน้าสุด
@@ -213,6 +258,15 @@ print(f"Capitalize: {text.capitalize()}")
 
 # Search methods
 print(f"Find 'world': {text.find('world')}")##Find 'world': 15
+=======
+print(f"Upper: {text.upper()}")
+print(f"Lower: {text.lower()}")
+print(f"Title: {text.title()}")
+print(f"Capitalize: {text.capitalize()}")
+
+# Search methods
+print(f"Find 'world': {text.find('world')}")
+>>>>>>> upstream/main
 print(f"Count 'o': {text.count('o')}")
 print(f"Starts with 'welcome': {text.startswith('welcome')}")
 print(f"Ends with 'python': {text.endswith('python')}")
@@ -226,12 +280,21 @@ print(f"Join with '-': {'-'.join(words)}")
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
+<<<<<<< HEAD
 print(f"isalnum(): {test_str.isalnum()}")#ถามว่าเป็นเลขไหม
 print(f"isalpha(): {test_str.isalpha()}")#ถามว่ามีแค่ตัวอักศรและตัวเลข Alphabet
 print(f"isdigit(): {test_str.isdigit()}")#ถามว่าเป็นตัวเลขไหม
 print(f"isupper(): {test_str.isupper()}")#ถามว่าเป็นตัวพิมพ์ใหญ่
 print(f"islower(): {test_str.islower()}")#ถามว่าเป็นตัวพิมพ์เล็ก
 #House id  ไม่จำเป็นต้องเป็น int เพราะไม่มีมากกว่าน้อยกว่า 
+=======
+print(f"isalnum(): {test_str.isalnum()}")
+print(f"isalpha(): {test_str.isalpha()}")
+print(f"isdigit(): {test_str.isdigit()}")
+print(f"isupper(): {test_str.isupper()}")
+print(f"islower(): {test_str.islower()}")
+
+>>>>>>> upstream/main
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
 # ===========================
@@ -392,4 +455,108 @@ print(f"Method 2 (loop): {reversed_str}")
 # Method 3: Using join and reversed
 print(f"Method 3 (join): {''.join(reversed(text))}")
 
+<<<<<<< HEAD
 print("\n=== ALL EXAMPLES COMPLETED ===")
+=======
+print("\n=== ALL EXAMPLES COMPLETED ===")
+
+
+"""
+### 1) ข้อ 1: สวัสดีคนที่กรอกชื่อ
+เขียนโปรแกรมที่:
+- รับชื่อจากผู้ใช้
+- แสดงผลเป็นข้อความว่า “สวัสดี, <ชื่อ>!”
+- จากนั้นแสดงชื่อด้วยตัวพิมพ์ใหญ่ทั้งหมด
+
+ตัวอย่าง:
+- Input: `pim`
+- Output:
+  - สวัสดี, pim!
+  - PIM
+
+คำแนะนำ:
+- ใช้ `input()`
+- ใช้ `.upper()`
+
+---
+
+### 2) ข้อ 2: นับจำนวนตัวอักษร 'a' ในคำ
+เขียนโปรแกรมที่:
+- รับข้อความจากผู้ใช้
+- นับจำนวนตัวอักษร `'a'` ในข้อความ
+- แสดงผลจำนวนที่นับได้
+
+ตัวอย่าง:
+- Input: `banana`
+- Output: `มีตัวอักษร a ทั้งหมด 3 ตัว`
+
+คำแนะนำ:
+- ใช้ loop `for`
+- ใช้ `if letter == 'a'`
+
+---
+
+### 3) ข้อ 3: แยกคำและแปลงเป็นข้อความใหม่
+เขียนโปรแกรมที่:
+- รับประโยคจากผู้ใช้
+- แยกประโยคออกเป็นคำ ๆ
+- ต่อคำด้วยเครื่องหมาย `-`
+- แสดงผลข้อความที่ถูกจัดรูปแบบใหม่
+
+ตัวอย่าง:
+- Input: `python is easy`
+- Output: `python-is-easy`
+
+คำแนะนำ:
+- ใช้ `split()`
+- ใช้ `'-'.join()`
+
+---
+
+### 4) ข้อ 4: ตรวจสอบรหัสผ่านแบบง่าย
+เขียนโปรแกรมที่:
+- รับข้อความจากผู้ใช้
+- ตรวจว่าเป็นตัวเลขทั้งหมดหรือไม่
+- ถ้าเป็นตัวเลขทั้งหมด ให้แสดง “Valid number”
+- ถ้าไม่ใช่ ให้แสดง “Please enter a valid number!”
+
+ตัวอย่าง:
+- Input: `12345`
+- Output: `Valid number`
+
+- Input: `abc123`
+- Output: `Please enter a valid number!`
+
+คำแนะนำ:
+- ใช้ `isdigit()`
+- ใช้ `try/except` ถ้าต้องแปลงเป็น int
+
+---
+
+### 5) ข้อ 5: เขียนโปรแกรมจัดรูปแบบข้อมูลคน
+เขียนโปรแกรมที่:
+- รับชื่อ-นามสกุลจากผู้ใช้
+- แยกชื่อและนามสกุลออกจากกัน
+- แสดงผลเป็น:
+  - ชื่อเต็ม
+  - นามสกุล
+  - ชื่อย่อ (ตัวแรกของชื่อและนามสกุล)
+  - จำนวนคำทั้งหมดในชื่อเต็ม
+
+ตัวอย่าง:
+- Input: `pim chai`
+- Output:
+  - ชื่อเต็ม: pim chai
+  - ชื่อ: pim
+  - นามสกุล: chai
+  - ชื่อย่อ: p.c.
+  - จำนวนคำ: 2
+
+คำแนะนำ:
+- ใช้ `split()`
+- ใช้ index ของ list
+- ใช้ slicing เช่น `name[0]`
+
+---
+"""
+>>>>>>> upstream/main

@@ -21,15 +21,26 @@ print()
 # Example 2: Function that performs a task
 def draw_separator():
     """Draws a line separator"""
+<<<<<<< HEAD
     print("-" * 40) ##- 40 ตัว
+=======
+    print("-" * 40)
+>>>>>>> upstream/main
 
 draw_separator()
 print("This is between separators")
 draw_separator()
+<<<<<<< HEAD
 print()##บรรทัดว่างเปล่า
 
 # =============================================================================
 # PART 2: FUNCTIONS WITH PARAMETERS =input program ย่อย
+=======
+print()
+
+# =============================================================================
+# PART 2: FUNCTIONS WITH PARAMETERS
+>>>>>>> upstream/main
 # =============================================================================
 print("\n=== PART 2: FUNCTIONS WITH PARAMETERS ===")
 
@@ -39,7 +50,11 @@ def greet_person(name):
     print(f"Hello, {name}! Nice to meet you.")
 
 print("Calling greet_person with different names:")
+<<<<<<< HEAD
 greet_person("Alice") ## ""อยู่ในนี้เป็น string
+=======
+greet_person("Alice")
+>>>>>>> upstream/main
 greet_person("Bob")
 greet_person("Charlie")
 print()
@@ -93,6 +108,7 @@ def get_circle_info(radius):
     pi = 3.14159
     area = pi * radius * radius
     circumference = 2 * pi * radius
+<<<<<<< HEAD
     volumn = 4.0/3 * ip * radius ** 3
     return area, circumference, volumn
 
@@ -103,6 +119,16 @@ print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
 print(f"volumn: {volumn:.2f}")
+=======
+    return area, circumference
+
+print("Circle calculations:")
+radius = 5
+area, circumference = get_circle_info(radius)
+print(f"Circle with radius {radius}:")
+print(f"Area: {area:.2f}")
+print(f"Circumference: {circumference:.2f}")
+>>>>>>> upstream/main
 print()
 
 # Example 3: Using returned values in expressions
@@ -113,28 +139,42 @@ def multiply(x, y):
 def square(n):
     """Returns the square of a number"""
     return n * n
+<<<<<<< HEAD
 def square_root(n):
     return n ** 0.5
+=======
+>>>>>>> upstream/main
 
 print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
 
+<<<<<<< HEAD
 print(f"square root of 25 =",square_root(25))
 print()
+=======
+>>>>>>> upstream/main
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
 # =============================================================================
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
 # Example 1: Function with default parameter
+<<<<<<< HEAD
 def greet_with_title(name, title="Mr./Ms."):#title Default parameter
+=======
+def greet_with_title(name, title="Mr./Ms."):
+>>>>>>> upstream/main
     """Greets person with optional title"""
     print(f"Hello, {title} {name}!")
 
 print("Using default parameters:")
+<<<<<<< HEAD
 greet_with_title("Smith")  # Uses default title เป็นตัวDefault
+=======
+greet_with_title("Smith")  # Uses default title
+>>>>>>> upstream/main
 greet_with_title("Johnson", "Dr.")  # Custom title
 greet_with_title("Brown", "Prof.")  # Custom title
 print()

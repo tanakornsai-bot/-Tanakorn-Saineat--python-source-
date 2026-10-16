@@ -11,7 +11,11 @@ mixed_tuple = (1, "hello", 3.14, True)
 single_tuple = (42,)  # Without comma, it's just parentheses around a value
 not_a_tuple = (42)    # This is just an integer
 
+<<<<<<< HEAD
 # Tuple from list ดูตัว () []  []=list ()=tuple
+=======
+# Tuple from list
+>>>>>>> upstream/main
 my_list = [1, 2, 3, 4]
 my_tuple = tuple(my_list)
 

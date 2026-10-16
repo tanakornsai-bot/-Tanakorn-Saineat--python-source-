@@ -1,7 +1,11 @@
 # Parent class (Base class)
 class Animal:
     
+<<<<<<< HEAD
     def __init__(self, name, species): #constructor method
+=======
+    def __init__(self, name, species):
+>>>>>>> upstream/main
         self.name = name
         self.species = species
         self.is_alive = True

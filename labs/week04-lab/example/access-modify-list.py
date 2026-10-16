@@ -5,15 +5,26 @@ print(f"First fruit: {fruits[0]}")      # apple
 print(f"Second fruit: {fruits[1]}")     # banana
 print(f"Last fruit: {fruits[4]}")       # kiwi
 
+<<<<<<< HEAD
 # Negative indexing นับถอยหลัง
+=======
+# Negative indexing
+>>>>>>> upstream/main
 print(f"Last fruit: {fruits[-1]}")      # kiwi
 print(f"Second last: {fruits[-2]}")     # grape
 
 # List slicing
+<<<<<<< HEAD
 print(f"First 3 fruits: {fruits[0:3]}")     # ['apple', 'banana', 'orange'] เข้าถึง index 0-3
 print(f"From index 2: {fruits[2:]}")        # ['orange', 'grape', 'kiwi'] เข้าถึง index 2-จนจบ
 print(f"Last 2 fruits: {fruits[-2:]}")      # ['grape', 'kiwi']
 print(f"Every 2nd fruit: {fruits[::2]}")    # ['apple', 'orange', 'kiwi']ตัวแรกถึงสุดท้ายกระโดดทีละ2
+=======
+print(f"First 3 fruits: {fruits[0:3]}")     # ['apple', 'banana', 'orange']
+print(f"From index 2: {fruits[2:]}")        # ['orange', 'grape', 'kiwi']
+print(f"Last 2 fruits: {fruits[-2:]}")      # ['grape', 'kiwi']
+print(f"Every 2nd fruit: {fruits[::2]}")    # ['apple', 'orange', 'kiwi']
+>>>>>>> upstream/main
 print(f"Reverse list: {fruits[::-1]}")      # ['kiwi', 'grape', 'orange', 'banana', 'apple']
 
 # Changing single elements
@@ -29,7 +40,11 @@ print(fruits)  # ['pear', 'cherry', 'orange']
 fruits.append("grape")           # Add to end
 print(fruits)  # ['pear', 'cherry', 'orange', 'grape']
 
+<<<<<<< HEAD
 fruits.insert(1, "banana")       # Insert at specific position แทรก ที่ index ตัวที่ 1
+=======
+fruits.insert(1, "banana")       # Insert at specific position
+>>>>>>> upstream/main
 print(fruits)  # ['pear', 'banana', 'cherry', 'orange', 'grape']
 
 fruits.extend(["kiwi", "apple"]) # Add multiple elements
@@ -39,7 +54,11 @@ print(fruits)  # ['pear', 'banana', 'cherry', 'orange', 'grape', 'kiwi', 'apple'
 fruits.remove("banana")          # Remove first occurrence
 print(fruits)  # ['pear', 'cherry', 'orange', 'grape', 'kiwi', 'apple']
 
+<<<<<<< HEAD
 removed_fruit = fruits.pop()     # Remove and return last element ขวาสุด
+=======
+removed_fruit = fruits.pop()     # Remove and return last element
+>>>>>>> upstream/main
 print(f"Removed: {removed_fruit}")  # apple
 print(fruits)  # ['pear', 'cherry', 'orange', 'grape', 'kiwi']
 

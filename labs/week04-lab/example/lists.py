@@ -11,7 +11,11 @@ mixed_list = [1, "hello", 3.14, True]
 numbers_range = list(range(1, 11))  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # List from string
+<<<<<<< HEAD
 letters = list("hello")  # ['h', 'e', 'l', 'l', 'o'] เก็บอักขระของคำว่า hello ทุกตัว
+=======
+letters = list("hello")  # ['h', 'e', 'l', 'l', 'o']
+>>>>>>> upstream/main
 
 print(f"Fruits: {fruits}")
 print(f"Numbers: {numbers}")
